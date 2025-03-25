@@ -21,11 +21,14 @@ $(document).ready(function() {
     //  Use .hover() with two functions: one for mouseover and one for mouseout
     //  Use .css() to change the box styles
     //  Look at: https://www.w3schools.com/jquery/jquery_css.asp
-    $("#box").hover(function(){
+    $("#box").mouseover(function(){
         $("#box").css("background-color", "magenta");
-        $("#box").css("border", '10px solid blue');
+        $("#box").css("border", '10px dotted blue');
       });
-  
+    $("#box").mouseout(function(){
+        $("#box").css("background-color", "#d0e0f0");
+        $("#box").css("border", '2px solid #777');
+      });
   
     //  Step 5: When "Add New Message" button is clicked, add a new <p> to the #box
     //  Use .append() to insert a new paragraph
