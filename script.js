@@ -56,7 +56,6 @@ $(document).ready(function() {
     $("#apply-font").click(function(){
       let fontFam = $("#font-select").val();
       let fontSize = $("#font-size-input").val() + "px";
-      console.log(fontFam)
       $("#box").css({ "font-size":fontSize});
       $("#box").css({"font-family": fontFam});
     });

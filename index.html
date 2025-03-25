@@ -17,11 +17,8 @@
     <button id="toggle-box">Toggle Message Box</button>
     <button id="add-message">Add New Message</button>
     <button id="apply-font">Apply Font Settings</button>
-    <!-- Message Box -->
-    <div id="box">
-      <p>This is your message box.</p>
-    </div>
-  
+   
+    <div id="font-settings">
     <select id="font-select">
         <option value="Arial">Arial</option>
         <option value="Georgia">Georgia</option>
@@ -29,10 +26,15 @@
         <option value="Courier New">Courier</option>
         <option value="Verdana">Verdana</option>
     </select>
-<div>
+
     <p>Font Size</p>
     <input min="0" max="30" id="font-size-input" type="range">
 </div>
+
+ <!-- Message Box -->
+ <div id="box">
+    <p>This is your message box.</p>
+  </div>
     <!-- 🎯 EXTENSION: You will need to add a dropdown and input element here -->
     <!-- Your JavaScript file will have comments explaining how -->
     <script src="script.js"></script>
