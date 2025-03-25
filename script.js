@@ -53,5 +53,9 @@ $(document).ready(function() {
     //  Use .val() to get the dropdown and input values
     //  Use .css() to apply those values to the #box
     //  Look at: https://www.w3schools.com/jquery/jquery_dom_get.asp
-  
+      console.log($("#font-select").val())
+    $("#apply-font").click(function(){
+      $("#box").css({ "font-size":  ($("#font-size-input").val() + `px`)});
+      
+    });
   });
